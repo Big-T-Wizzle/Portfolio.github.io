@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -6,67 +7,82 @@
     <link rel="stylesheet" href="styles.css" />
 </head>
 
-<body>
-<header class="fade-in">
-    <h1 class="slide-down">Tyler Hall</h1>
-    <p class="fade-in-delayed">Developer • Web Designer • Creator</p>
-</header>
+<body class="dark-theme">
 
-<nav class="fade-in-delayed">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+<div id="page-wrapper">
 
-    <!-- 🌙 Dark/Light Toggle Button -->
-    <button id="theme-toggle">🌙</button>
-</nav>
+    <!-- NAVBAR AT TOP -->
+    <nav class="fade-in-delayed">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
 
-<section id="about" class="section-animate">
-    <h2>About Me</h2>
-    <p>
-        Hi! I'm a developer passionate about building clean, functional applications.
-        I enjoy web development, Software Development, and AI development.
-    </p>
-</section>
+        <!-- 🌙 DARK/LIGHT TOGGLE -->
+        <button id="theme-toggle">☀️</button>
+    </nav>
 
-<section id="projects" class="section-animate">
-    <h2>Projects</h2>
+    <header class="fade-in">
+        <h1 class="slide-down">Tyler Hall</h1>
+        <p class="fade-in-delayed">Developer • Web Designer • Creator</p>
+    </header>
 
-    <!-- Project 1: Image Left, Text Right -->
-    <div class="project">
-        <h3>Metroidvania-style game</h3>
-        <div class="project-content">
-            <img src="images/project1.jpg" alt="Project 1 Screenshot" />
-            <p>
-                This is a metroidvania style game I created using unity. It is my first program written in C# and using Unity.
+    <section id="about" class="section-animate">
+
+        <div class="about-wrapper-vertical">
+            <img src="images/about-photo.jpg" alt="Photo of Tyler" class="about-photo-centered">
+
+            <p class="about-text-centered">
+                Hi! I'm a developer passionate about building clean, functional applications.
+                I enjoy web development, Software Development, and AI development.
             </p>
         </div>
-    </div>
 
-    <!-- Project 2: Text Left, Image Right -->
-    <div class="project">
-        <h3>Football stadium checklist</h3>
-        <div class="project-content reverse">
-            <img src="images/project2.png" alt="Project 2 Screenshot" />
-            <p>
-                This was my first fully fledged application, Its main purpose was to allows a user to select football stadiums that they had visited and display the results using google maps API. I later added on the ability to make an account and view other accounts progress.
-            </p>
+    </section>
+
+    <section id="projects" class="section-animate">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project">
+            <h3>Metroidvania-Style Game</h3>
+            <div class="project-content">
+                <img src="images/project1.jpg" alt="Metroidvania game screenshot" />
+                <p>
+                    This is a metroidvania-style game I created using Unity.
+                    It was my first time using C# and the Unity engine.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
 
-<section id="contact" class="section-animate">
-    <h2>Contact</h2>
-    <p>Email me: <a href="mailto:tylerhall05.work@gmail.com">tylerhall05.work@gmail.com</a></p>
-</section>
+        <!-- Project 2 -->
+        <div class="project">
+            <h3>Football Stadium Checklist</h3>
+            <div class="project-content reverse">
+                <p>
+                    This was my first full application. It tracks stadiums a user has visited
+                    and displays progress on Google Maps. It also includes account creation
+                    and progress tracking across accounts.
+                </p>
+                <img src="images/project2.png" alt="Football stadium checklist screenshot" />
+            </div>
+        </div>
+    </section>
 
-<footer class="fade-in">
-    <p>Made by Tyler Hall © 2025</p>
-    <a href="https://github.com/TylerHall05" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/tyler-hall-460515278" target="_blank">LinkedIn</a>
-</footer>
+    <section id="contact" class="section-animate">
+        <h2>Contact</h2>
+        <p>Email me: <a href="mailto:tylerhall05.work@gmail.com">tylerhall05.work@gmail.com</a></p>
+    </section>
 
+    <footer class="fade-in">
+        <p>Made by Tyler Hall © 2025</p>
+        <a href="https://github.com/TylerHall05" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/tyler-hall-460515278" target="_blank">LinkedIn</a>
+    </footer>
+
+</div> <!-- END WRAPPER -->
 
 <script src="scroll-animations.js"></script>
+<script src="theme-toggle.js"></script>
+
 </body>
 </html>
